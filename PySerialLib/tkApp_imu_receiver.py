@@ -91,7 +91,8 @@ def pack_complete (payload):
     #print(pack_idx,accx,accy,accz,gx,gy,gz)
 
 def client_program():
-    host = '192.168.1.57'
+    #host = '192.168.1.57'
+    host = '192.168.4.1'
     port = 8000  # socket server port number
 
     client_socket = socket.socket()  # instantiate

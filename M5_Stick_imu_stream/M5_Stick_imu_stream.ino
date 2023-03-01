@@ -52,7 +52,7 @@ void setup() {
     const char* ap_ssid     = "mini-4WD_IMU";
     const char* ap_password = "123456789";
     WiFi.mode(WIFI_AP);
-    WiFi.begin(ap_ssid, ap_password);
+    WiFi.softAP(ap_ssid, ap_password);
   }
 
   dataStreamTcpServer = new AsyncServer(tcpServerPort); // start listening on tcpServerPort
